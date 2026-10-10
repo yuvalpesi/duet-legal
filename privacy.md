@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Duet Privacy Policy
 
-Last updated: 9 October 2026
+Last updated: 10 October 2026
 
 Duet is a pregnancy organization and family-planning app. The app's technical
 project and service identifiers use the name `PregnancyTogether`. Duet is not a
@@ -38,6 +38,12 @@ Health.
   Health Tracking measurement.
 - Local files use iOS Data Protection. CloudKit record metadata uses encrypted
   fields where the deployed schema supports them.
+- If the user connects a folder through Files, existing and future documents
+  are copied to that folder, and supported files in it can be imported into
+  Duet. The folder may belong to iCloud Drive or another installed provider
+  such as Google Drive, Dropbox, or OneDrive. That provider controls its
+  storage, permissions, and retention; anyone granted access to the folder
+  can read the copies. Connecting a folder is optional and device-specific.
 - Password-protected portable backups are created only when the user requests
   them. The app does not automatically upload those backup files.
 
@@ -64,6 +70,12 @@ from the Privacy and Data Management screen, removes a participant, or removes
 the app and its applicable cloud data. Full deletion removes protected local
 records, documents, temporary exports, reminders, backups, and owned CloudKit
 workspace data. Cloud deletion may remain pending until the device reconnects.
+
+Disconnecting a Files folder, changing the connected folder, or deleting Duet
+data does not delete copies in that external folder. Users must remove those
+copies and manage access through Files or the selected provider. Likewise,
+recipients retain documents and reports previously exported through the share
+sheet.
 
 Apple Health permissions can be changed at any time in iOS Settings. Automatic
 foreground import can also be disabled inside Duet.
