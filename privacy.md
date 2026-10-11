@@ -1,14 +1,14 @@
 ---
-title: Duet Privacy Policy
+title: Bumpora Privacy Policy
 permalink: /privacy/
 ---
 
-# Duet Privacy Policy
+# Bumpora Privacy Policy
 
-Last updated: 10 October 2026
+Last updated: 11 October 2026
 
-Duet is a pregnancy organization and family-planning app. The app's technical
-project and service identifiers use the name `PregnancyTogether`. Duet is not a
+Bumpora is a pregnancy organization and family-planning app. The app's technical
+project and service identifiers use the name `PregnancyTogether`. Bumpora is not a
 medical service and does not provide diagnosis, treatment, or emergency care.
 
 ## Information handled by the app
@@ -40,7 +40,7 @@ Health.
   fields where the deployed schema supports them.
 - If the user connects a folder through Files, existing and future documents
   are copied to that folder, and supported files in it can be imported into
-  Duet. The folder may belong to iCloud Drive or another installed provider
+  Bumpora. The folder may belong to iCloud Drive or another installed provider
   such as Google Drive, Dropbox, or OneDrive. That provider controls its
   storage, permissions, and retention; anyone granted access to the folder
   can read the copies. Connecting a folder is optional and device-specific.
@@ -58,7 +58,7 @@ apps and websites.
 An invited partner receives access only after accepting Apple's CloudKit share.
 Users should invite only a person they trust. Health Tracking and imported
 Apple Health measurements are excluded from that shared workspace, so the
-partner does not automatically see them in Duet. If a user chooses the report
+partner does not automatically see them in Bumpora. If a user chooses the report
 share action, iOS presents the system share sheet and the user selects whether,
 how, and with whom to share that exported report. This one-time action does not
 enable ongoing Health Tracking synchronization.
@@ -71,14 +71,14 @@ the app and its applicable cloud data. Full deletion removes protected local
 records, documents, temporary exports, reminders, backups, and owned CloudKit
 workspace data. Cloud deletion may remain pending until the device reconnects.
 
-Disconnecting a Files folder, changing the connected folder, or deleting Duet
+Disconnecting a Files folder, changing the connected folder, or deleting Bumpora
 data does not delete copies in that external folder. Users must remove those
 copies and manage access through Files or the selected provider. Likewise,
 recipients retain documents and reports previously exported through the share
 sheet.
 
 Apple Health permissions can be changed at any time in iOS Settings. Automatic
-foreground import can also be disabled inside Duet.
+foreground import can also be disabled inside Bumpora.
 
 ## Security
 
@@ -90,7 +90,7 @@ Account, device passcode, backup password, and sharing invitations.
 
 ## Children
 
-Duet is intended for adults organizing a pregnancy. It is not
+Bumpora is intended for adults organizing a pregnancy. It is not
 directed to children and does not knowingly collect information from children.
 
 ## Changes and contact

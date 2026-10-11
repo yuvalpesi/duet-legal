@@ -1,10 +1,10 @@
 ---
-title: Duet
+title: Bumpora
 ---
 
-# Duet
+# Bumpora
 
-Duet is a pregnancy organization and shared-planning app for couples.
+Bumpora is a pregnancy organization and shared-planning app for couples.
 
 - [Privacy policy](privacy/)
 - [Support](support/)
