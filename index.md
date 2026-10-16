@@ -1,10 +1,10 @@
 ---
-title: Bumpora
+title: Azygote
 ---
 
-# Bumpora
+# Azygote
 
-Bumpora is a pregnancy organization and shared-planning app for couples.
+Azygote is a pregnancy organization and shared-planning app for couples.
 
 - [Privacy policy](privacy/)
 - [Support](support/)
