@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Azygote Privacy Policy
 
-Last updated: 16 October 2026
+Last updated: 29 October 2026
 
 Azygote is a pregnancy organization and family-planning app. The app's technical
 project and service identifiers use the name `PregnancyTogether`. Azygote is not a
@@ -27,25 +27,35 @@ Health.
 
 ## Where information is stored
 
-- Apple Health measurements and all entries in Health Tracking are stored only
-  in protected local storage on the current iPhone. They are not uploaded to
-  CloudKit and are not synchronized to a partner. The protected local store,
-  including local restore points, is excluded from automatic device backups.
-- Items deliberately placed in a shared pregnancy workspace are synchronized
-  through the app's private CloudKit container so the invited partner can view
-  and edit them. This includes saved journal notes and photos once the family
-  workspace is connected; a journal entry is shared content, not a private
-  Health Tracking measurement.
-- Local files use iOS Data Protection. CloudKit record metadata uses encrypted
-  fields where the deployed schema supports them.
-- If the user connects a folder through Files, existing and future documents
-  are copied to that folder, and supported files in it can be imported into
-  Azygote. The folder may belong to iCloud Drive or another installed provider
-  such as Google Drive, Dropbox, or OneDrive. That provider controls its
-  storage, permissions, and retention; anyone granted access to the folder
-  can read the copies. Connecting a folder is optional and device-specific.
-- Password-protected portable backups are created only when the user requests
-  them. The app does not automatically upload those backup files.
+- Medical and pregnancy records stay in protected storage on the current
+  iPhone: Apple Health imports, Health Tracking entries, pregnancy dates and
+  context, appointments, checkups, medical documents, journal notes/photos,
+  birth plans, postpartum records, check-ins and support requests. These are
+  excluded from CloudKit synchronization and automatic device backups.
+- Optional partner collaboration is limited to a name shortlist, votes/actions,
+  participant identifiers and display names. Name notes remain local. Only this
+  limited planning projection is stored in the user’s private/shared CloudKit
+  workspace; the app does not send medical records or document assets there.
+- Older iCloud records are first copied, including available file/photo assets,
+  to protected recovery storage on the iPhone. Normal supported records are
+  also recovered into local app stores before remote cleanup. Recovery export
+  is available under Privacy and information management. Cleanup waits for
+  successful local persistence and can remain pending while offline or if a
+  participant lacks permission. Older installed app versions can create old
+  records again; update both partners’ devices before relying on the new scope.
+- The app no longer automatically connects or copies documents to cloud
+  folders. Previously exported files remain controlled by their provider.
+- Calendar integration can write medical appointments only to an on-device
+  calendar, not iCloud, Exchange or other cloud calendars. Copies created by
+  older versions are not automatically moved or deleted.
+- Widgets use protected local snapshots excluded from automatic backups. An
+  installed paired Apple Watch can receive a summary directly through Apple’s
+  device connectivity service; its app snapshot is stored in a protected file
+  excluded from automatic backups rather than UserDefaults.
+- Local files use iOS Data Protection. The limited planning record uses
+  CloudKit encrypted fields. Password-protected portable backups and report
+  exports are created only when the user requests them; the app does not
+  automatically upload these files.
 
 ## Sharing and purposes
 
@@ -55,20 +65,23 @@ partner. The app does not sell personal information, display advertising, use
 health information for advertising, or track users across other companies'
 apps and websites.
 
-An invited partner receives access only after accepting Apple's CloudKit share.
-Users should invite only a person they trust. Health Tracking and imported
-Apple Health measurements are excluded from that shared workspace, so the
-partner does not automatically see them in Azygote. If a user chooses the report
-share action, iOS presents the system share sheet and the user selects whether,
-how, and with whom to share that exported report. This one-time action does not
-enable ongoing Health Tracking synchronization.
+An invited partner receives access only after accepting Apple’s CloudKit share.
+Only the name shortlist and its limited planning metadata are automatically
+shared in this release. Medical/pregnancy records, journal content, support
+requests and check-ins do not automatically appear on the partner’s device.
+The report or recovery-export action opens the system share sheet; the user
+chooses the destination and recipients. This does not enable ongoing medical
+synchronization. Exported files can contain sensitive records, so choose their
+destination carefully.
 
 ## Retention, deletion, and user control
 
 Information remains until the user deletes individual items, deletes all data
-from the Privacy and Data Management screen, removes a participant, or removes
-the app and its applicable cloud data. Full deletion removes protected local
-records, documents, temporary exports, reminders, backups, and owned CloudKit
+from the Privacy and Data Management screen, removes the app, or explicitly deletes the applicable cloud data. Removing a
+participant ends shared planning access; it does not erase personal medical
+records from either iPhone. Full deletion removes protected local
+records, documents, recovered cloud records, temporary exports, reminders,
+backups, and owned CloudKit
 workspace data. Cloud deletion may remain pending until the device reconnects.
 
 Disconnecting a Files folder, changing the connected folder, or deleting Azygote
