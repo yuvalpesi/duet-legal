@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Azygote Privacy Policy
 
-Last updated: 29 October 2026
+Last updated: 31 October 2026
 
 Azygote is a pregnancy organization and family-planning app. The app's technical
 project and service identifiers use the name `PregnancyTogether`. Azygote is not a
@@ -27,35 +27,39 @@ Health.
 
 ## Where information is stored
 
-- Medical and pregnancy records stay in protected storage on the current
-  iPhone: Apple Health imports, Health Tracking entries, pregnancy dates and
-  context, appointments, checkups, medical documents, journal notes/photos,
-  birth plans, postpartum records, check-ins and support requests. These are
-  excluded from CloudKit synchronization and automatic device backups.
-- Optional partner collaboration is limited to a name shortlist, votes/actions,
-  participant identifiers and display names. Name notes remain local. Only this
-  limited planning projection is stored in the user’s private/shared CloudKit
-  workspace; the app does not send medical records or document assets there.
-- Older iCloud records are first copied, including available file/photo assets,
-  to protected recovery storage on the iPhone. Normal supported records are
-  also recovered into local app stores before remote cleanup. Recovery export
-  is available under Privacy and information management. Cleanup waits for
-  successful local persistence and can remain pending while offline or if a
-  participant lacks permission. Older installed app versions can create old
-  records again; update both partners’ devices before relying on the new scope.
-- The app no longer automatically connects or copies documents to cloud
-  folders. Previously exported files remain controlled by their provider.
-- Calendar integration can write medical appointments only to an on-device
-  calendar, not iCloud, Exchange or other cloud calendars. Copies created by
-  older versions are not automatically moved or deleted.
-- Widgets use protected local snapshots excluded from automatic backups. An
-  installed paired Apple Watch can receive a summary directly through Apple’s
-  device connectivity service; its app snapshot is stored in a protected file
-  excluded from automatic backups rather than UserDefaults.
-- Local files use iOS Data Protection. The limited planning record uses
-  CloudKit encrypted fields. Password-protected portable backups and report
-  exports are created only when the user requests them; the app does not
-  automatically upload these files.
+- The app keeps protected local copies of your information. Health Tracking,
+  Apple Health imports, personal baselines, movement counts and contraction
+  histories remain on-device and are excluded from the shared CloudKit records.
+- When you use partner collaboration, the shared workspace uses your private
+  or shared CloudKit zone. It includes pregnancy dates/context, appointments,
+  checkups, preparation tasks, support requests, check-ins, baby-name notes and
+  votes, birth-planning and postpartum organization, journal entries/photos,
+  documents and their folder descriptions. Metadata uses encrypted CloudKit
+  fields; document files and journal photos use CloudKit assets in that zone.
+  The app does not operate a developer-hosted data service or analytics service.
+- Files-folder integration uses the folder you explicitly choose in Apple's
+  Files picker, including iCloud Drive or an enabled third-party provider.
+  Available documents are copied to it and supported files can be imported from
+  it. The bookmark granting folder access stays on the connecting iPhone. A
+  partner receives only the folder description through the shared app workspace;
+  direct access to the provider folder requires that provider's sharing controls.
+- Folder synchronization is additive. Existing external copies are not erased
+  when you disconnect, change folders, or delete the corresponding app record.
+  The selected provider handles its network transfers and retention.
+- Calendar integration writes appointments to the writable Apple Calendar
+  destination you choose, including shared/cloud calendars. Missing-event repair
+  checks appointment markers before adding replacements. Existing events keep
+  their calendars. Calendar providers receive the event content you request.
+- Older cloud records have protected recovery copies on the iPhone. Automatic
+  migration never deletes shared originals. Versioned user-deletion receipts
+  remove shared records, with a local recovery copy preserved before incoming
+  removals are applied. Recovery copies are excluded from automatic device
+  backups and are removed by Delete All Data on that device.
+- Widgets use protected local snapshots. A paired Apple Watch can receive its
+  summary directly through Apple's device connectivity service. Those files are
+  excluded from automatic backups. Local files use iOS Data Protection.
+- Password-protected portable backups, reports and recovery exports are created
+  only when requested. Their destination and recipients are chosen by the user.
 
 ## Sharing and purposes
 
@@ -65,14 +69,13 @@ partner. The app does not sell personal information, display advertising, use
 health information for advertising, or track users across other companies'
 apps and websites.
 
-An invited partner receives access only after accepting Apple’s CloudKit share.
-Only the name shortlist and its limited planning metadata are automatically
-shared in this release. Medical/pregnancy records, journal content, support
-requests and check-ins do not automatically appear on the partner’s device.
-The report or recovery-export action opens the system share sheet; the user
-chooses the destination and recipients. This does not enable ongoing medical
-synchronization. Exported files can contain sensitive records, so choose their
-destination carefully.
+An invited partner receives access after accepting your CloudKit share. Shared
+workspace records, journal photos and document files can then appear on both
+phones. Health measurements and personal tracking histories are not included.
+The report, backup and recovery-export actions open the system share sheet;
+you choose the destination and recipients. Exports can contain sensitive records.
+Removing a share prevents future downloads; previously saved copies, exports,
+local recovery copies and provider backups cannot be remotely erased.
 
 ## Retention, deletion, and user control
 
